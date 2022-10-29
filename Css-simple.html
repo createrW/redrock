@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Css初级</title>
+  <style>
+    /* 选择器{样式1，样式2，...} */
+    /* 给谁修改样式{该啥样式} */
+    /* 下面是标签选择器：（不能差异化） */
+    p {
+      color: red;
+      font-size: 25px;
+
+    }
+
+    /* 类选择器：差异化,在调用的时候下面标签需要注明class=""*/
+    .box {
+      width: 150px;
+      height: 150px;
+      font-size: 30px;
+    }
+
+    .red {
+      background-color: red
+    }
+
+    .green {
+      background-color: green;
+    }
+
+    /* id选择器只能调用一次，以#开头 */
+    #pink {
+      color: pink;
+    }
+
+    /* 通配符选择器把html所有元素直接更改成一样的，无需调用 */
+    * {
+      margin: 0%;
+      padding: 0%;
+    }
+
+    /* font-xxx系列 （字体）*/
+    div {
+      font-family: Arial, "微软雅黑", "Microsoft Yahei";
+      font-size: 5px;
+      font-weight: 700;
+      font-style: italic;
+      /* 400为正常字体 */
+    }
+
+    p {
+      font-size: 25px;
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+</head>
+
+<body>
+  <p>哈哈哈哈哈哈</p>
+  <div class="box red">我这一块全是红色</div>
+  <div></div>
+  <div class="box green">我这一块全是绿色</div>
+  <div id="pink">我这一块是粉色</div>
+</body>
+
+</html>

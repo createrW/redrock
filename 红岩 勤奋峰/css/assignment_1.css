@@ -1,0 +1,60 @@
+.btn {
+  position: absolute;
+  top: 600px;
+  left: 250px;
+  height: 150px;
+  width: 150px;
+  border-radius: 30px;
+  border: none;
+  color: var(--btnFontColor);
+  background-color: var(--btnBg);
+}
+body {
+  background: var(--bg);
+  /* var(--bg)在下面定义过了，但要加个var */
+  color: var(--fontColor);
+  font-family: monospace;
+}
+label{
+  font-size: medium;
+  font-family: monospace;
+  font-weight: 200px;
+}
+h1{
+font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+  font-family: helvetica;
+}
+li {
+  list-style: circle;
+}
+h2{
+  margin-left: 50px;
+}
+.list {
+  list-style: square;
+}
+
+#msg {
+  font-family: monospace;
+}
+/* 在root里面定义的后面直接拿来用即可 */
+:root {
+  --green: #00FF00;
+  --white: #FFFFFF;
+  --black: #000000;
+}
+.light-theme {
+  --bg: var(--white);
+  --fontColor: var(--black);
+  --btnBg: var(--black);
+  --btnFontColor: var(--white);
+}
+
+.dark-theme {
+  --bg: var(--black);
+  --fontColor: var(--green);
+  --btnBg: var(--white);
+  --btnFontColor: var(--black);
+}

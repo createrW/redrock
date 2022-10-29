@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table align="center" border="1" cellpadding="0" cellspacing="0" width="500">
+        <!-- align表示这个表的位置，border表示要不要加边框，cellpadding 表示单元格边缘与字符的间距，cellpacing表示单元格之间间距 -->
+        <thead>
+            <!--thead标签必须包含tr，表示表头 -->
+            <tr>
+                <th>姓名</th>
+                <th>学号</th>
+                <th>班级</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- tr表示这一行，th表示表头，文字加粗居中 -->
+            <tr>
+                <td>张田所</td>
+                <td>114514</td>
+                <td>1919810</td>
+            </tr>
+            <!-- td表示表的内容 -->
+            <tr>
+                <td>李华</td>
+                <td>10001</td>
+                <td>150.00</td>
+            </tr>
+        </tbody>
+    </table><br />
+    <table border="1" cellpadding="0" cellspacing="0" width="500">
+        <thead>
+            <tr>
+                <td>"1111"</td>
+                <td colspan="2">"22222" </td>
+            </tr>
+        </thead>
+        <tbody>
+            </tr>
+            <td>"11111"</td>
+            <td rowspan="2">"22222"</td>
+            <td>"333333"</td>
+            </tr>
+            </tr>
+            <td>"1111"</td>
+            <td>"33333"</td>
+            </tr>
+        </tbody>
+    </table><br />
+    <ul>
+        <!-- ul只能出现li标签,但li里面可以放任何标签-->
+        <!-- ul  unordered list -->
+        <li>1.保持开心</li>
+        <li>2.追求Dream</li>
+        <li>3.Keep Moving On</li>
+        <li>
+            <p>啦啦啦啦啦啦</p>
+        </li>
+    </ul>
+    <ol>
+        <!-- ol ordered list 跟ul一样 -->
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+    <dl>
+        <!-- dl 自定义列表,dt表主题，dd表示关于dd的内容-->
+        <dt>联系我们</dt>
+        <dd>官方微信</dd>
+        <dd>新浪微博</dd>
+        <dd><a href="http://www.youtube.com">YouTube</a></dd>
+        <dd><a href="http://www.twitter.com">Twitter</a></dd>
+    </dl>
+    <!-- 表单域
+    <form action="接受数据的地址" method="get/post" name="随便起个name">
+        ********
+    </form>
+    -->
+    <form action="xxx.php" method="get">
+        <!-- label标签用于提升体验，绑定元素值，事光标放到标签上即可 -->
+        <label for="yonghuming">用户名：</label> <input type="text" maxlength="64" id="yonghuming"> <br />
+        <label for="pwd">密码:</label> <input type="password" name="pwd" id="pwd"> <br />
+        <!-- radio 多选一   checkbox多选-->
+        <!-- input里面还要多选一个name, 因为多个选项必须有相同的name值才能完成多选一的效果-->
+        <label for="nan">性别：男</label> <input type="radio" name="sex" value="男" id="nan" checked="checked"> <label
+            for="nv">女</label><input type="radio" id="nv" name="sex" value="女">
+        <br />
+        <!-- checked用于单选框和复选框，用于默认界面已经打√ -->
+        爱好：<label for="a">吃饭</label><input type="checkbox" value-="恰饭" id="a" checked="checked"> <label
+            for="b">睡觉</label><input type="checkbox" id="b" value="睡觉"> <label for="c">打台球</label><input type="checkbox"
+            id="c" value="打台球"><br />
+        <!-- value表示传入到后台中的元素值 -->
+        <!-- submit表示按下这个按钮以后，数据传给后台,reset表示重置上述数据-->
+        <input type="submit" value="提交">
+        <input type="reset" value="重置"><br />
+        <!-- button不提交数据，后期结合js使用 -->
+        <input type="button" value="获取短信验证码">
+        <!-- file上传文件 -->
+        <input type="file" value="上传文件"><br />
+    </form><br />
+    <form action="xxx.php" method="post">
+        <!-- select表示下拉表单 -->
+        <label for="x">籍贯：</label>
+        <select id="x">
+            <option value="请选择" selected="selected">请选择</option>
+            <!-- selected表示默认就是这个值 -->
+            <option value="山东">山东</option>
+            <option value="湖北">湖北</option>
+            <option value="重庆">重庆</option>
+            <option value="安徽">安徽</option>
+        </select>
+    </form>
+    <br />
+    <form action="xxx.php" method="get">
+        <!-- textarea文本域标签,用来描述反馈 -->
+        反馈意见：<textarea name="" id="" cols="30" rows="10">
+
+
+
+        </textarea>
+        <input type="submit" value="提交意见">
+
+    </form>
+</body>
+
+</html>

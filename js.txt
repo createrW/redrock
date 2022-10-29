@@ -1,0 +1,10 @@
+1.
+模板文字是格式化字符串的另一种方式，除了使用反引号代替引号。任何不是纯文本的内容都必须放在 placeholders${ }中。这包括任何可能是字符串的变量。
+eg.
+let myString1 = "Hello";
+let myString2 = "World";
+
+`${myString1} ${myString2}!` //Hello World!
+`${myString1}, ${myString2}!` //Hello, World!
+
+2.

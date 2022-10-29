@@ -1,0 +1,62 @@
+
+  body {
+    background: var(--bg);
+    /* var(--bg)在下面定义过了，但要加个var */
+    color: var(--fontColor);
+    font-family: monospace;
+  }
+h1{
+  color: blue;
+}
+ul {
+  font-family: helvetica;
+}
+li {
+  list-style: circle;
+}
+
+.list {
+  list-style: square;
+}
+/* #msg is 是ID选择器, and .list 是类选择器. */
+#msg {
+  font-family: monospace;
+}
+/* 在root里面定义的后面直接拿来用即可 */
+:root {
+  --green: #00FF00;
+  --white: #FFFFFF;
+  --black: #000000;
+}
+.btn {
+  position: absolute;
+  top: 20px;
+  left: 250px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  color: var(--btnFontcolor);
+  background-color: var(--btnBg);
+
+}
+
+/* 添加浅色主题 
+注意：在您的 HTML 文件中，<body>使用类名 更新元素light-theme，这样浅色主题的类选择器将正确应用样式。
+*/
+/* .light-theme { 
+  color: #000000;
+  background: #00FF00;
+}*/
+.light-theme {
+  --bg: var(--green);
+  --fontColor: var(--black);
+  --btnBg: var(--black);
+  --btnFontcolor: var(--white);
+}
+.dark-theme {
+  --bg: var(--black);
+  --fontColor: var(--green);
+  --btnBg: var(--white);
+  --btnFontcolor: var(--black);
+}
