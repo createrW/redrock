@@ -1,0 +1,41 @@
+.box{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+   align-items: center;
+    margin: right 20px;;
+}
+.box1{
+    flex-shrink: 0;
+    display: flow;
+    border: 1px solid black;
+    width: 320px;
+    height: 500px;
+}
+.box2{
+    flex-shrink: 7;
+    margin-left: 20px;
+    border: 1px solid black;
+    width: 320px;
+    height: 300px;
+    
+}
+.box3{
+    flex-shrink: 0;
+    margin-left: 20px;
+    border: 1px solid black;
+    width: 320px;
+    height: 100px;
+    
+}
+.box4{
+    flex-shrink: 0;
+    margin-left: 20px;
+    border: 1px solid black;
+    width: 320px;
+    height: 600px;
+}
+.special{
+    display: flex;
+    align-self: flex-start;
+}
